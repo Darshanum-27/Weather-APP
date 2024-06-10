@@ -14,9 +14,8 @@ const CurrentWeather = () => {
 
     return (
         <div>
-            <h1> My Location</h1>
-            <h1>Arlington</h1>
-            <h1>{currWeather? currWeather.current.temperature_2m:"loading"}</h1>
+            <p> My Location</p>
+            <p>{currWeather? currWeather.current.temperature_2m:"loading"}</p>
         </div>
     )
 }

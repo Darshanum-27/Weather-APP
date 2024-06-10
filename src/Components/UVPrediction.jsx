@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React from 'react'
 import {useState,useEffect} from 'react'
-import { BarChart } from '@mui/x-charts/BarChart';
 import { LineChart } from '@mui/x-charts/LineChart';
 
 const UVPrediction = () => {
