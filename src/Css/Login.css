@@ -1,0 +1,50 @@
+@media screen and (max-width: 2500px) {
+    .LandingImage {
+        width: 1600px;
+        height: 100vh;
+    }
+    .twosections {
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 1800px) {
+    .LandingImage {
+        width: 1200px;
+        height: 100vh;
+    }
+    .twosections {
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .LandingImage {
+        width: 800px;
+        height: 100vh;
+    }
+    .twosections {
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 800px) {
+    .LandingImage {
+        width: 450px;
+        height: 100vh;
+    }
+    .twosections {
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 480px) {
+    .LandingImage {
+        width: 300px;
+        height: 100vh;
+    }
+    .twosections {
+        display: flex;
+        flex-direction: row;
+    }
+}

@@ -4,15 +4,16 @@ import { Gauge } from '@mui/x-charts/Gauge';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 
-const CurrentUV = () =>{
+const CurrentUV = (props) =>{
     let [currUV, setCurrentUV] = useState(null);
-    useEffect(()=>{
-            axios.get('https://api.open-meteo.com/v1/forecast?latitude=32.735&longitude=-97.108&hourly=uv_index&timezone=America%2FChicago&forecast_hours=1').then((response) => {
+    console.log(props.latitude)
+    useEffect((props)=>{
+            axios.get('https://api.open-meteo.com/v1/forecast?latitude='+props.latitude+'&longitude='+props.latitude+'&hourly=uv_index&timezone=America%2FChicago&forecast_hours=1').then((response) => {
             setCurrentUV(response.data)
             console.log(response.data)
             }
         )
-    },[])
+    },[props])
 return(
     <div>
         <Stack direction={{ xs: 'column', md: 'row' }} spacing={{ xs: 1, md: 3 }}>
